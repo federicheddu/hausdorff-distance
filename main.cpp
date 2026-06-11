@@ -33,7 +33,9 @@ int main(int argc, char *argv[]) {
     igl::hausdorff(VA, FA, VB, FB, hausdorff_dist);
 
     // Load the first mesh using cinolib to compute its bounding box
+    silence_output();
     cinolib::Trimesh<> mesh(argv[1]);
+    restore_output();
     double dim = std::min(mesh.bbox().delta_x(), std::min(mesh.bbox().delta_y(), mesh.bbox().delta_z()));
 
     // Output the results

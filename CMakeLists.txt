@@ -4,10 +4,10 @@ project(hausdorff_distance)
 
 set(cinolib_DIR "/your/path/to/cinolib")
 
-set(CINOLIB_USES_OPENGL_GLFW_IMGUI    ON  ) # used for rendering with OpenGL
-set(CINOLIB_USES_TETGEN               ON  ) # used for polygon triangulation
+set(CINOLIB_USES_OPENGL_GLFW_IMGUI    OFF ) # used for rendering with OpenGL
+set(CINOLIB_USES_TETGEN               OFF ) # used for polygon triangulation
 set(CINOLIB_USES_TRIANGLE             OFF ) # used for tetrahedralization
-set(CINOLIB_USES_SHEWCHUK_PREDICATES  ON  ) # used for exact geometric tests on input points
+set(CINOLIB_USES_SHEWCHUK_PREDICATES  OFF ) # used for exact geometric tests on input points
 set(CINOLIB_USES_INDIRECT_PREDICATES  OFF ) # used for exact geometric tests on implicit points
 set(CINOLIB_USES_GRAPH_CUT            OFF ) # used for graph clustering
 set(CINOLIB_USES_BOOST                OFF ) # used for 2D polygon operations (e.g. thickening, clipping, 2D booleans...)
